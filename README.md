@@ -3,8 +3,6 @@ DDoS mitigation service for distributed network.
 
 [Work in progress]
 
-# CooperativeSignaling
-
 https://medium.com/coinmonks/5-minute-guide-to-deploying-smart-contracts-with-truffle-and-ropsten-b3e30d5ee1e
 
 truffle compile
