@@ -5,8 +5,11 @@ DDoS mitigation service for distributed network.
 
 https://medium.com/coinmonks/5-minute-guide-to-deploying-smart-contracts-with-truffle-and-ropsten-b3e30d5ee1e
 
+```sh
 $ truffle compile
 $ truffle migrate --network ropsten
+```
+
 
 
 
@@ -15,8 +18,12 @@ $ truffle migrate --reset --network ropsten
 
 
 to test on ropsten or rinkeby with my accounts:
+
+```sh
 $ truffle test /truf_tests.js --network rinkeby
 $ truffle test /truf_tests.js --network ropsten
+```
+
 
 
 truffle console --network ropsten
