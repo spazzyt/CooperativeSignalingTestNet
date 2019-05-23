@@ -1,7 +1,7 @@
 # CooperativeSignalingTestNet
 DDoS mitigation service for distributed network.
 
-[Work in progress]
+:coffee: Work in Progress :hourglass_flowing_sand:
 
 https://medium.com/coinmonks/5-minute-guide-to-deploying-smart-contracts-with-truffle-and-ropsten-b3e30d5ee1e
 
