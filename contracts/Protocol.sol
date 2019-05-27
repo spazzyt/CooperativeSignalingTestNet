@@ -37,6 +37,18 @@ contract Protocol {
     Mitigator = reg.getMitigator(_name);
   }
 
+  function resetContract()public{
+    require(msg.sender == Target, '[resetContract] Only Target');
+    CurrentState = Enums.State(0);
+    Mitigator = address(0);
+    Deadline = now + DeadlineInterval * 1 seconds;
+  }
+
+  function kill()public{
+    require(msg.sender == Target,'Only the Target can kill the Protocol.');
+    selfdestruct(Target); //efficient way to release all funds from contract to Target
+  }
+
 
   function a_init(uint _DeadlineInterval,uint256 _OfferedFunds,string memory _ListOfAddresses) public {
     require(msg.sender==Target,"[init] sender is not required actor");
