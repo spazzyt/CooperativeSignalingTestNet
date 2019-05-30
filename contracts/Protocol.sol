@@ -27,7 +27,7 @@ contract Protocol {
 
   constructor() public payable{
     Target = msg.sender;
-    RegisterAddress = 0xB1ADca58D4f01cfF196a3895Efe325A32eeBb5E0;
+    RegisterAddress = 0x5B79AC23Dfb93F2e842003EA5a59D7E80A5fb8Bb;
     //Register reg = Register(_RegisterAddress);
     //Mitigator = reg.getMitigator('Bob');
   }

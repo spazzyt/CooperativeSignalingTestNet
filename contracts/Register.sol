@@ -6,7 +6,7 @@ contract Register{
 
     event LogProtocolAddresses(address protocolAddress);
     event LogNotValid(string s);
-    event LogAddressOfTargetAndMitigator(string n, address m);
+    event mitigatorSet(bool b);
 
     struct MitigatorStr {
         address P;
@@ -34,5 +34,6 @@ contract Register{
         require(msg.sender == creatorRegister, 'Only the creator of Register is able to access this function.');
         require(mitigators[_name].isAdded==false, 'The name of this mitigator is already added.');
         mitigators[_name] = MitigatorStr(address(0), _Mitigator, true);
+        emit mitigatorSet(true);
     }
 }
